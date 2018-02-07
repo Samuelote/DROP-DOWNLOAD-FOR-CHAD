@@ -1,0 +1,68 @@
+@keyframes borderSpin {
+  from {
+    transform: rotate(0deg)
+  }
+  to {
+    transform: rotate(360deg)
+  }
+}
+
+
+body {
+  background: radial-gradient(lightblue, blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45vh;
+  width: 50vh;
+  border-radius: 10vh;
+  border: white 10px solid;
+  transition: 1s;
+}
+
+.Circle:hover {
+  height: 50vh;
+  width: 50vh;
+  border-radius: 40vh;
+  border: white 10px dashed;
+  animation: borderSpin infinite 7s linear;
+}
+
+.DropTitle {
+  font-size: 1.5em;
+  color: black;
+  position: absolute;
+  transition: 1s;
+}
+
+.ButtonTime {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8vh;
+  width: 28vh;
+  border-radius: 2vh;
+  border: white 3px solid;
+  font-size: 1.5em;
+  transition: 1s;
+}
+
+.ButtonTime:hover {
+  transition: 1s;
+  background: black;
+  opacity: .7;
+  color: white;
+}
+
+.ButtonTime:active {
+  transition: 0s;
+  background: black;
+  opacity: 1;
+  color: white;
+}
